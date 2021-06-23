@@ -47,6 +47,17 @@ namespace ICS.WebAPI.Controllers
             return Ok(users);
         }
 
+        [HttpGet("TestUsers")]
+        public IActionResult GetTestUsers()
+        {
+            UserInputModel userInputModel = new UserInputModel();
+            userInputModel.Firstname = "TestUser First Name";
+            userInputModel.Lastname = "TestUser Last Name";
+
+            List<UserInputModel> users = new List<UserInputModel>();
+            users.Add(userInputModel);
+            return Ok(users);
+        }
         [HttpPost("User")]
         public IActionResult GetUser([FromBody]string id)
         {
