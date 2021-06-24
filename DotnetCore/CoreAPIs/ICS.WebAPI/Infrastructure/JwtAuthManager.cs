@@ -7,7 +7,6 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json.Serialization;
-using ICS.Services.Entities.Models;
 using ICS.WebAPI.Infrastructure.Models;
 using Microsoft.IdentityModel.Tokens;
 

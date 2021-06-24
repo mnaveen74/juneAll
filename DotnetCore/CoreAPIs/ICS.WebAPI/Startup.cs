@@ -1,5 +1,3 @@
-using ICS.Services;
-using ICS.Services.Entities.Models;
 using ICS.WebAPI.Infrastructure.Models;
 //using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -58,7 +56,7 @@ namespace ICS.WebAPI
             });
                 services.AddMvc();
             services.AddControllers();
-            services.AddScoped<IUserService, UserService>();
+            
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
@@ -106,7 +104,7 @@ namespace ICS.WebAPI
 
         public void ConfigureContainer(IUnityContainer container) 
         {
-            DependencyRegistration.Configure(container, Configuration);
+            //DependencyRegistration.Configure(container, Configuration);
         }
     }
 }

@@ -24,10 +24,5 @@
     <PackageReference Include="Unity.Microsoft.DependencyInjection" Version="5.11.5" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ICS.DAL\ICS.DAL.csproj" />
-    <ProjectReference Include="..\ICS.Services\ICS.Services.csproj" />
-  </ItemGroup>
-
 
 </Project>
